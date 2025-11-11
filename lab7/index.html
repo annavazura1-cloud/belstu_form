@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form action="index3.html" method="get">
+        <fieldset>
+            <legend>Форма:</legend>
+            <div class="block">
+                <textarea name="faculty" id="faculty" placeholder="Факультет информационных технологий"></textarea>
+            </div>
+            <div class="input_div">
+                <input type="text" placeholder="Фамилия" id="surname" name="surname">
+                <input type="text" placeholder="Имя" id="name" name="name">
+            </div>
+            
+            <h3>Специальность</h3>
+            <select name="spec" id="spec" style="width: 37%;">
+                <option value="ПОИТ">ПОИТ</option> 
+                <option value="ИС">ИС</option> 
+                <option value="ЦД">ЦД</option> 
+            </select>
+            
+            <div id="course">
+                <h3>Курс</h3>
+                <input type="radio" name="course" value="1"> 1
+                <input type="radio" name="course" value="2"> 2
+                <input type="radio" name="course" value="3"> 3
+                <input type="radio" name="course" value="4"> 4
+            </div>
+
+            <h3>Предметы:</h3>
+            <div class="checkboxvar">
+               <div class="check">
+                <input type="checkbox" id="check1" value="ОИТ" name="subjects">
+                <label for="check1">ОИТ</label>
+               </div> 
+               <div class="check">
+                 <input type="checkbox" id="check2" value="ОАП" name="subjects">
+                <label for="check2">ОАП</label>
+               </div>
+               <div class="check">
+                 <input type="checkbox" id="check3" value="История" name="subjects">
+                <label for="check3">История</label>
+               </div>
+               <div class="check">
+                 <input type="checkbox" id="check4" value="Физика" name="subjects">
+                <label for="check4">Физика</label>
+               </div>
+               <div class="check">
+                 <input type="checkbox" id="check5" value="Математика" name="subjects">
+                <label for="check5">Математика</label>
+               </div>
+            </div>
+            
+            <div class="block_but">
+                <button type="button" onclick="location.reload(); return false;">Reset</button>
+                <button type="submit" >Submit</button>
+            </div>
+            <button type="button" style="margin-bottom: 10px;" onclick="Print()">Напечатать</button>
+        </fieldset>
+    </form>
+    
+    <div id="output" style="display: none;"></div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
