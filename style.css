@@ -1,0 +1,47 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.checkboxvar{
+    display: flex;
+    flex-direction: row;
+}
+
+.block_but{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.input_div{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_div input{
+    width: 200px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.block{
+    margin-bottom: 25px;
+}
+
+textarea{
+    width: 200px;
+    height: 70px;
+}
+
+#output{
+    
+    overflow: auto;
+    margin-top: 20px;
+    border: 5px solid rgb(255, 111, 111);
+    height: 100px;
+    width: 25%;
+    padding: 12px;
+}
